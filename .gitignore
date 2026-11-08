@@ -9,3 +9,8 @@ dist
 !.env.example
 *.tsbuildinfo
 .DS_Store
+
+# Impeccable session artefacts (screenshots, local config); briefs and design.json stay tracked
+.impeccable/review
+.impeccable/config.local.json
+.impeccable/decision-*.json

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Hub — Community Pharmacy sketch</title>
+<style>
+  :root{--green:#0b7a4b;--green-deep:#085a37;--mint:#e8f4ee;--ink:#15201a;--soft:#4b5a52;--bag:#f4f4f1;--bag-shade:#dedcd5;--rule:#cfdcd4}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1440px;height:900px;overflow:hidden;background:#fff;font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+  header{height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 72px;border-bottom:1px solid var(--rule)}
+  .brand{display:flex;align-items:center;gap:14px;font-size:22px;font-weight:700;letter-spacing:-.01em}
+  .cross{width:40px;height:40px;background:var(--green);border-radius:6px;position:relative}
+  .cross::before,.cross::after{content:"";position:absolute;background:#fff;border-radius:2px}
+  .cross::before{left:16px;top:8px;width:8px;height:24px}.cross::after{left:8px;top:16px;width:24px;height:8px}
+  nav{display:flex;gap:34px;font-size:17px;color:var(--soft)}
+  nav a:last-child{color:var(--green);font-weight:600}
+  .hero{display:grid;grid-template-columns:600px 1fr;gap:60px;padding:70px 72px 0}
+  h1{font-size:58px;line-height:1.06;letter-spacing:-.02em;font-weight:700}
+  .lede{font-size:21px;line-height:1.55;color:var(--soft);margin-top:24px;max-width:540px}
+  .cta{display:inline-block;margin-top:36px;background:var(--green);color:#fff;font-size:20px;font-weight:700;padding:20px 32px;border-radius:8px}
+  .cta2{display:inline-block;margin-left:22px;font-size:18px;color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+  .assure{margin-top:34px;display:flex;gap:30px;font-size:16px;color:var(--soft)}
+  .assure span::before{content:"✓ ";color:var(--green);font-weight:700}
+  /* paper bag */
+  .bag{position:relative;width:560px;height:620px;margin-top:-10px}
+  .bag .body{position:absolute;left:60px;top:40px;width:440px;height:560px;background:var(--bag);border:1px solid var(--bag-shade);border-radius:6px 6px 10px 10px;box-shadow:0 18px 40px rgba(0,0,0,.10)}
+  .bag .fold{position:absolute;left:60px;top:40px;width:440px;height:70px;background:var(--bag-shade);border-radius:6px 6px 0 0;opacity:.7}
+  .label{position:absolute;left:110px;top:170px;width:340px;background:#fff;border:1px solid #c9d3cc;box-shadow:0 4px 10px rgba(0,0,0,.08);font-size:14px;line-height:1.5}
+  .label .band{background:var(--green);color:#fff;padding:10px 16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between}
+  .label .big{font-size:26px;font-weight:700;padding:16px 16px 4px;line-height:1.15}
+  .label dl{display:grid;grid-template-columns:90px 1fr;gap:4px 10px;padding:8px 16px 14px;color:var(--ink)}
+  .label dt{color:var(--soft);font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding-top:3px}
+  .label .foot{border-top:1px dashed #c9d3cc;padding:10px 16px;color:var(--soft);font-size:13px}
+  .label2{position:absolute;left:150px;top:470px;width:300px;background:#fff;border:1px solid #c9d3cc;padding:12px 16px;font-size:14px;line-height:1.45;box-shadow:0 4px 10px rgba(0,0,0,.08)}
+  .label2 b{display:block;font-size:18px}
+  .label2 .own{color:#8a5a00;font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+  .example{position:absolute;right:72px;top:98px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+  .strip{position:absolute;left:0;right:0;bottom:0;height:120px;background:var(--mint);display:grid;grid-template-columns:repeat(3,1fr);align-items:center;padding:0 72px;gap:40px;font-size:17px;line-height:1.45;color:var(--ink)}
+  .strip b{display:block;color:var(--green)}
+</style>
+</head>
+<body>
+  <header><div class="brand"><span class="cross"></span>Health Hub</div><nav><a>How it works</a><a>Privacy</a><a>For families</a><a>Sign in</a></nav></header>
+  <div class="example">Example records · not a real person</div>
+  <section class="hero">
+    <div>
+      <h1>Your medical letters, read back to you exactly as written.</h1>
+      <p class="lede">Upload clinic letters, results and prescriptions. Health Hub puts every fact on a dated timeline and labels it with the page it came from. It never tells you what your records mean.</p>
+      <a class="cta">Create account</a><a class="cta2">Sign in</a>
+      <div class="assure"><span>Free to start</span><span>UK data only</span><span>Delete everything, any time</span></div>
+    </div>
+    <div class="bag">
+      <div class="body"></div><div class="fold"></div>
+      <div class="label">
+        <div class="band"><span>Health Hub · Fact</span><span>Measurement</span></div>
+        <div class="big">HbA1c 48 mmol/mol</div>
+        <dl><dt>Date</dt><dd>3 March 2025</dd><dt>Source</dt><dd>Clinic letter, Royal Example Hospital, 21 March 2025 · page 1, line 6</dd><dt>Means</dt><dd>Health Hub does not interpret or advise.</dd></dl>
+        <div class="foot">Kept exactly as the letter states it. Tap the source to see the line.</div>
+      </div>
+      <div class="label2"><span class="own">Person's Account</span><b>Metformin started</b>Stated by you, 10 April 2025</div>
+    </div>
+  </section>
+  <div class="strip">
+    <div><b>Every fact is cited</b>Each one links to the page and line it came from.</div>
+    <div><b>Nothing is interpreted</b>No scores, no alerts, no advice. Just what the letter says.</div>
+    <div><b>Yours to keep or delete</b>Stored in the UK. Deleting your account removes everything.</div>
+  </div>
+</body>
+</html>

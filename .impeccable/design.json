@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T00:00:00Z",
+  "title": "Design System: Health Hub",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Sea Green", "canonical": "#0e6f5c", "tonalRamp": ["oklch(15% 0.04 170)", "oklch(27% 0.06 170)", "oklch(38% 0.08 170)", "oklch(47% 0.09 170)", "oklch(61% 0.09 170)", "oklch(72% 0.08 170)", "oklch(84% 0.05 170)", "oklch(95% 0.02 170)"] },
+      "primary-deep": { "role": "primary", "displayName": "Deep Sea Green", "canonical": "#0a5546", "tonalRamp": ["oklch(15% 0.04 170)", "oklch(27% 0.06 170)", "oklch(38% 0.08 170)", "oklch(47% 0.09 170)", "oklch(61% 0.09 170)", "oklch(72% 0.08 170)", "oklch(84% 0.05 170)", "oklch(95% 0.02 170)"] },
+      "primary-wash": { "role": "primary", "displayName": "Sea Green Wash", "canonical": "#d7ece6", "tonalRamp": ["oklch(15% 0.04 170)", "oklch(27% 0.06 170)", "oklch(38% 0.08 170)", "oklch(47% 0.09 170)", "oklch(61% 0.09 170)", "oklch(72% 0.08 170)", "oklch(84% 0.05 170)", "oklch(95% 0.02 170)"] },
+      "account": { "role": "tertiary", "displayName": "Account Amber", "canonical": "#8a5a00", "tonalRamp": ["oklch(15% 0.04 75)", "oklch(27% 0.07 75)", "oklch(38% 0.09 75)", "oklch(48% 0.11 75)", "oklch(61% 0.12 75)", "oklch(72% 0.11 75)", "oklch(84% 0.07 75)", "oklch(95% 0.03 75)"] },
+      "account-wash": { "role": "tertiary", "displayName": "Amber Wash", "canonical": "#f6ecd8", "tonalRamp": ["oklch(15% 0.04 75)", "oklch(27% 0.07 75)", "oklch(38% 0.09 75)", "oklch(48% 0.11 75)", "oklch(61% 0.12 75)", "oklch(72% 0.11 75)", "oklch(84% 0.07 75)", "oklch(95% 0.03 75)"] },
+      "disputed": { "role": "tertiary", "displayName": "Disputed Brick", "canonical": "#b3261e", "tonalRamp": ["oklch(15% 0.06 28)", "oklch(27% 0.11 28)", "oklch(38% 0.15 28)", "oklch(50% 0.19 28)", "oklch(61% 0.18 28)", "oklch(72% 0.14 28)", "oklch(84% 0.08 28)", "oklch(95% 0.03 28)"] },
+      "disputed-wash": { "role": "tertiary", "displayName": "Brick Wash", "canonical": "#f8e3e1", "tonalRamp": ["oklch(15% 0.06 28)", "oklch(27% 0.11 28)", "oklch(38% 0.15 28)", "oklch(50% 0.19 28)", "oklch(61% 0.18 28)", "oklch(72% 0.14 28)", "oklch(84% 0.08 28)", "oklch(95% 0.03 28)"] },
+      "ink": { "role": "neutral", "displayName": "Green Ink", "canonical": "#16211f", "tonalRamp": ["oklch(15% 0.012 175)", "oklch(27% 0.012 175)", "oklch(38% 0.012 175)", "oklch(50% 0.012 175)", "oklch(61% 0.012 175)", "oklch(72% 0.012 175)", "oklch(84% 0.012 175)", "oklch(95% 0.008 175)"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#4a5b56", "tonalRamp": ["oklch(15% 0.012 175)", "oklch(27% 0.012 175)", "oklch(38% 0.012 175)", "oklch(50% 0.012 175)", "oklch(61% 0.012 175)", "oklch(72% 0.012 175)", "oklch(84% 0.012 175)", "oklch(95% 0.008 175)"] },
+      "ink-faint": { "role": "neutral", "displayName": "Faint Ink", "canonical": "#7a8a85", "tonalRamp": ["oklch(15% 0.012 175)", "oklch(27% 0.012 175)", "oklch(38% 0.012 175)", "oklch(50% 0.012 175)", "oklch(61% 0.012 175)", "oklch(72% 0.012 175)", "oklch(84% 0.012 175)", "oklch(95% 0.008 175)"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(38% 0 0)", "oklch(50% 0 0)", "oklch(61% 0 0)", "oklch(72% 0 0)", "oklch(84% 0 0)", "oklch(100% 0 0)"] },
+      "wash": { "role": "neutral", "displayName": "Wash", "canonical": "#eef5f2", "tonalRamp": ["oklch(15% 0.01 165)", "oklch(27% 0.01 165)", "oklch(38% 0.01 165)", "oklch(50% 0.01 165)", "oklch(61% 0.01 165)", "oklch(72% 0.01 165)", "oklch(84% 0.01 165)", "oklch(96% 0.01 165)"] },
+      "wash-deep": { "role": "neutral", "displayName": "Deep Wash", "canonical": "#dcebe4", "tonalRamp": ["oklch(15% 0.01 165)", "oklch(27% 0.01 165)", "oklch(38% 0.01 165)", "oklch(50% 0.01 165)", "oklch(61% 0.01 165)", "oklch(72% 0.01 165)", "oklch(84% 0.01 165)", "oklch(96% 0.01 165)"] },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#cfdcd6", "tonalRamp": ["oklch(15% 0.01 165)", "oklch(27% 0.01 165)", "oklch(38% 0.01 165)", "oklch(50% 0.01 165)", "oklch(61% 0.01 165)", "oklch(72% 0.01 165)", "oklch(84% 0.01 165)", "oklch(96% 0.01 165)"] },
+      "line-soft": { "role": "neutral", "displayName": "Soft Line", "canonical": "#e3ece8", "tonalRamp": ["oklch(15% 0.01 165)", "oklch(27% 0.01 165)", "oklch(38% 0.01 165)", "oklch(50% 0.01 165)", "oklch(61% 0.01 165)", "oklch(72% 0.01 165)", "oklch(84% 0.01 165)", "oklch(96% 0.01 165)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The page h1 only; hero headline held to 16ch and three lines." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2 and the account-page h1." },
+      "title": { "displayName": "Title", "purpose": "h3 for steps, shows, FAQ summaries and Never-list leads." },
+      "lede": { "displayName": "Lede", "purpose": "The Soft Ink paragraph under a Display or Headline." },
+      "body": { "displayName": "Body", "purpose": "All running text at 19px; measure 66ch." },
+      "small": { "displayName": "Small", "purpose": "Source label, marks, hints, Fact kinds, footer, tables, error text." },
+      "caption": { "displayName": "Caption", "purpose": "Example label, rendered letter, timeline dates, status chips, step frames." }
+    },
+    "shadows": [
+      { "name": "panel", "value": "0 18px 40px -20px rgba(22, 33, 31, 0.28), 0 4px 12px -6px rgba(22, 33, 31, 0.12)", "purpose": "Raised Paper panels: demo, step frames, show art, menu, account panel." },
+      { "name": "raise", "value": "0 10px 24px -14px rgba(14, 111, 92, 0.45)", "purpose": "The primary button at rest; removed when disabled." },
+      { "name": "focus-halo", "value": "0 0 0 4px var(--hh-primary-wash)", "purpose": "Text inputs on focus, with a Sea Green border." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The trace and every state transition; exponential ease-out." },
+      { "name": "duration", "value": "240ms", "purpose": "The one authored duration; 0ms under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "menu-label", "value": "420px" },
+      { "name": "demo-two-col", "value": "640px" },
+      { "name": "root-18px", "value": "720px" },
+      { "name": "desktop-nav", "value": "900px" },
+      { "name": "hero-two-col", "value": "1000px" },
+      { "name": "container", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single filled action in a view: Create account.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Create account</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 52px; padding: 0 1.5rem; border-radius: var(--hh-r-control, 12px); border: 1.5px solid transparent; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-weight: 700; font-size: 19px; text-decoration: none; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), box-shadow 240ms cubic-bezier(0.16,1,0.3,1), transform 240ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 3px solid var(--hh-focus, #0e6f5c); outline-offset: 3px; } .ds-btn-primary { background: var(--hh-primary, #0e6f5c); color: #fff; box-shadow: var(--hh-shadow-raise, 0 10px 24px -14px rgba(14,111,92,0.45)); } .ds-btn-primary:hover { background: var(--hh-primary-deep, #0a5546); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper-faced outlined action beside or instead of a primary.",
+      "html": "<a class=\"ds-btn ds-btn-secondary\" href=\"#\">Back to the front page</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 52px; padding: 0 1.5rem; border-radius: var(--hh-r-control, 12px); border: 1.5px solid transparent; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-weight: 700; font-size: 19px; text-decoration: none; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1), transform 240ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 3px solid var(--hh-focus, #0e6f5c); outline-offset: 3px; } .ds-btn-secondary { background: var(--hh-paper, #fff); color: var(--hh-primary, #0e6f5c); border-color: var(--hh-line, #cfdcd6); } .ds-btn-secondary:hover { border-color: var(--hh-primary, #0e6f5c); background: var(--hh-wash, #eef5f2); color: var(--hh-primary-deep, #0a5546); }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Text-only action; Sign in beside Create account.",
+      "html": "<a class=\"ds-btn ds-btn-quiet\" href=\"#\">Sign in</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 52px; padding: 0 0.75rem; border-radius: var(--hh-r-control, 12px); border: 1.5px solid transparent; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-weight: 700; font-size: 19px; text-decoration: none; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 3px solid var(--hh-focus, #0e6f5c); outline-offset: 3px; } .ds-btn-quiet { background: transparent; color: var(--hh-primary, #0e6f5c); } .ds-btn-quiet:hover { background: var(--hh-wash, #eef5f2); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Label above, hint below, 52px field with a Sea Green focus halo; errors in Disputed Brick.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-email\">Email address</label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"you@example.org\"><p class=\"ds-hint\">We only use this to sign you in.</p></div>",
+      "css": ".ds-field { display: grid; gap: 0.5rem; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-size: 19px; color: var(--hh-ink, #16211f); } .ds-label { font-weight: 700; } .ds-hint { margin: 0; color: var(--hh-ink-soft, #4a5b56); font-size: 18px; } .ds-input { width: 100%; min-height: 52px; padding: 0 1rem; font: inherit; color: inherit; border: 1.5px solid var(--hh-line, #cfdcd6); border-radius: var(--hh-r-control, 12px); background: var(--hh-paper, #fff); transition: border-color 240ms cubic-bezier(0.16,1,0.3,1), box-shadow 240ms cubic-bezier(0.16,1,0.3,1); } .ds-input:hover { border-color: var(--hh-ink-faint, #7a8a85); } .ds-input:focus { outline: none; border-color: var(--hh-primary, #0e6f5c); box-shadow: 0 0 0 4px var(--hh-primary-wash, #d7ece6); } .ds-input::placeholder { color: var(--hh-ink-faint, #7a8a85); } .ds-input[aria-invalid=\"true\"] { border-color: var(--hh-disputed, #b3261e); } .ds-error { margin: 0; color: var(--hh-disputed, #b3261e); font-weight: 700; font-size: 18px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Sticky translucent header: mark and wordmark, plain links with a green underline on hover or current, one filled action.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-logo\" href=\"#\"><svg viewBox=\"0 0 40 40\" width=\"36\" height=\"36\" aria-hidden=\"true\"><rect x=\"5\" y=\"4\" width=\"22\" height=\"32\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M11 13h10\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M11 27h7\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M11 20h22\" stroke=\"#fff\" stroke-width=\"6.5\" stroke-linecap=\"round\"/><path d=\"M11 20h22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"20\" r=\"3.25\" fill=\"currentColor\"/></svg><span>Health Hub</span></a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">How it works</a><a href=\"#\">What you'll see</a><a href=\"#\">What it never does</a><a href=\"#\">Questions</a></nav><div class=\"ds-actions\"><a class=\"ds-quiet\" href=\"#\">Sign in</a><a class=\"ds-primary\" href=\"#\">Create account</a></div></header>",
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 76px; padding: 0 1.5rem; background: rgba(255,255,255,0.92); backdrop-filter: saturate(140%) blur(10px); border-bottom: 1px solid var(--hh-line-soft, #e3ece8); font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-size: 19px; } .ds-logo { display: inline-flex; align-items: center; gap: 0.75rem; color: var(--hh-ink, #16211f); text-decoration: none; font-weight: 700; font-size: 22px; letter-spacing: -0.01em; } .ds-logo svg { color: var(--hh-primary, #0e6f5c); } .ds-nav { display: flex; gap: 1.5rem; } .ds-nav a { color: var(--hh-ink-soft, #4a5b56); text-decoration: none; font-weight: 500; padding: 0.5rem 0; border-bottom: 2px solid transparent; transition: color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--hh-ink, #16211f); border-bottom-color: var(--hh-primary, #0e6f5c); } .ds-actions { display: flex; align-items: center; gap: 0.75rem; } .ds-quiet, .ds-primary { display: inline-flex; align-items: center; min-height: 46px; padding: 0 0.75rem; border-radius: 12px; font-weight: 700; text-decoration: none; } .ds-quiet { color: var(--hh-primary, #0e6f5c); } .ds-quiet:hover { background: var(--hh-wash, #eef5f2); } .ds-primary { padding: 0 1.5rem; background: var(--hh-primary, #0e6f5c); color: #fff; box-shadow: 0 10px 24px -14px rgba(14,111,92,0.45); } .ds-primary:hover { background: var(--hh-primary-deep, #0a5546); } .ds-header a:focus-visible { outline: 3px solid var(--hh-focus, #0e6f5c); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "status-chip",
+      "description": "Pill confirming a Pathway: green wash, tick icon, 'Confirmed by you'.",
+      "html": "<span class=\"ds-status\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg> Confirmed by you</span>",
+      "css": ".ds-status { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-size: 16px; font-weight: 700; color: var(--hh-primary, #0e6f5c); background: var(--hh-primary-wash, #d7ece6); border-radius: 999px; padding: 4px 10px; }"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Raised Paper surface with the example label; every demonstration lives in one.",
+      "html": "<section class=\"ds-panel\"><header class=\"ds-panel-head\"><h2 class=\"ds-panel-title\">What Health Hub shows you</h2><span class=\"ds-example\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M12 11v5\"/><circle cx=\"12\" cy=\"8\" r=\".7\" fill=\"currentColor\" stroke=\"none\"/></svg> Example records, not a real person</span></header><div class=\"ds-letter\"><p class=\"ds-letter-kind\">Clinic letter · page 1 of 1</p><p class=\"ds-line ds-line-head\">Royal Example Hospital · Diabetes Clinic</p><p class=\"ds-line\">Thank you for referring Ms J. Example.</p><p class=\"ds-line ds-lit\">Her most recent HbA1c was 48 mmol/mol on 3 March 2025.</p><p class=\"ds-line\">She continues on metformin 500 mg twice daily.</p></div></section>",
+      "css": ".ds-panel { background: var(--hh-paper, #fff); border: 1px solid var(--hh-line-soft, #e3ece8); border-radius: var(--hh-r-panel, 20px); box-shadow: var(--hh-shadow-panel, 0 18px 40px -20px rgba(22,33,31,0.28), 0 4px 12px -6px rgba(22,33,31,0.12)); padding: 1.5rem; display: grid; gap: 1rem; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); color: var(--hh-ink, #16211f); } .ds-panel-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; } .ds-panel-title { margin: 0; font-size: 19px; font-weight: 700; color: var(--hh-ink-soft, #4a5b56); } .ds-example { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--hh-ink-soft, #4a5b56); font-size: 16px; font-weight: 500; } .ds-letter { background: var(--hh-wash, #eef5f2); border-radius: 12px; padding: 1rem; font-size: 16px; line-height: 1.5; color: var(--hh-ink-soft, #4a5b56); display: grid; gap: 2px; } .ds-letter-kind { margin: 0 0 0.75rem; font-weight: 700; } .ds-line { margin: 0 -8px; padding: 3px 8px; border-radius: 6px; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-line-head { color: var(--hh-ink-faint, #7a8a85); } .ds-lit { background: var(--hh-primary-wash, #d7ece6); color: var(--hh-ink, #16211f); font-weight: 700; }"
+    },
+    {
+      "name": "Fact Row with Source Label",
+      "kind": "custom",
+      "refersTo": "fact-row",
+      "description": "The product's core component: a dated Fact, its value, and the Source line it came from. Selected rows take the green wash; an Account fact goes amber with the pen.",
+      "html": "<div class=\"ds-facts\"><button class=\"ds-fact\" type=\"button\" aria-pressed=\"true\"><time class=\"ds-fact-date\">3 Mar 2025</time><span class=\"ds-fact-body\"><span class=\"ds-fact-value\">HbA1c 48 mmol/mol</span><span class=\"ds-fact-kind\">Measurement</span><span class=\"ds-source\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"3\" width=\"11\" height=\"18\" rx=\"2.5\"/><path d=\"M7.5 8h4M7.5 16h3\"/><path d=\"M7.5 12h12.5\"/><circle cx=\"20\" cy=\"12\" r=\"1.6\" fill=\"currentColor\" stroke=\"none\"/></svg> Clinic letter · page 1, line 5</span></span></button><button class=\"ds-fact ds-fact-account\" type=\"button\" aria-pressed=\"false\"><time class=\"ds-fact-date\">10 Apr 2025</time><span class=\"ds-fact-body\"><span class=\"ds-fact-value\">Felt dizzy for two mornings after the dose change</span><span class=\"ds-fact-kind\">Person's Account</span><span class=\"ds-source\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20l4-1 10-10-3-3L5 16z\"/><path d=\"M13 7l3 3\"/></svg> Stated by you, 10 April 2025</span></span></button></div>",
+      "css": ".ds-facts { display: grid; gap: 2px; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); font-size: 19px; color: var(--hh-ink, #16211f); } .ds-fact { display: grid; grid-template-columns: 7.2rem 1fr; gap: 0.75rem 1rem; align-items: start; padding: 1rem; border-radius: 12px; border: 1.5px solid transparent; text-align: left; width: 100%; background: transparent; font: inherit; color: inherit; cursor: pointer; transition: background-color 240ms cubic-bezier(0.16,1,0.3,1), border-color 240ms cubic-bezier(0.16,1,0.3,1); } .ds-fact:hover { background: var(--hh-wash, #eef5f2); } .ds-fact:focus-visible { outline: 3px solid var(--hh-focus, #0e6f5c); outline-offset: 3px; } .ds-fact[aria-pressed=\"true\"] { background: var(--hh-primary-wash, #d7ece6); border-color: var(--hh-primary, #0e6f5c); } .ds-fact-date { font-variant-numeric: tabular-nums; font-weight: 700; line-height: 1.3; } .ds-fact-body { display: grid; gap: 0.25rem; } .ds-fact-value { font-weight: 700; line-height: 1.3; } .ds-fact-kind { color: var(--hh-ink-soft, #4a5b56); font-size: 18px; } .ds-source { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 18px; color: var(--hh-primary, #0e6f5c); font-weight: 500; } .ds-fact-account .ds-fact-date, .ds-fact-account .ds-source { color: var(--hh-account, #8a5a00); } .ds-fact-account[aria-pressed=\"true\"] { background: var(--hh-account-wash, #f6ecd8); border-color: var(--hh-account, #8a5a00); }"
+    },
+    {
+      "name": "Person's Account and Disputed Marks",
+      "kind": "custom",
+      "refersTo": "mark-account",
+      "description": "The two reserved-colour marks; each carries its word and its icon so colour never speaks alone.",
+      "html": "<div class=\"ds-marks\"><span class=\"ds-mark-account\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20l4-1 10-10-3-3L5 16z\"/><path d=\"M13 7l3 3\"/></svg> Person's Account</span><span class=\"ds-mark-disputed\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 21V4\"/><path d=\"M6 4h11l-2 4 2 4H6\"/></svg> Disputed</span></div>",
+      "css": ".ds-marks { display: flex; flex-wrap: wrap; gap: 1rem; font-family: var(--hh-font, 'Atkinson Hyperlegible Next', system-ui, sans-serif); } .ds-mark-account, .ds-mark-disputed { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 18px; } .ds-mark-account { color: var(--hh-account, #8a5a00); } .ds-mark-disputed { color: var(--hh-disputed, #b3261e); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Letter on the Kitchen Table",
+    "overview": "Health Hub looks like the category standard for a trusted UK health service, played straight and at full craft. A white page, one deep sea-green, one typeface designed for legibility, and generous type at 19px. Nothing on screen is trying to be clever; the one memorable moment is functional: touching a Fact lights the exact line of the letter it came from. The visual system exists to make a clinic letter and its Timeline sit side by side and be read by anyone who holds the paper, including older readers on a phone at a kitchen table.\n\nDensity is calm and spacious. Sections alternate white and a pale green wash, panels float on soft offset shadows, and every synthetic demonstration carries the words \"Example records, not a real person\". The two state colours, amber and brick red, are reserved by law for the Person's Account and for Disputed; they never decorate, and they never carry a message without a word and an icon beside them.\n\nConfirmed rejections: no stock photography, no gradient blobs, no hero imagery of smiling people, no entrance animations, no dark theme, and no colour standing in for a word.",
+    "keyCharacteristics": [
+      "One typeface (Atkinson Hyperlegible Next, variable 200 to 800, self-hosted), 19px body, 18px under 720px",
+      "One primary green for the mark, primary action, links and the Source label",
+      "Amber reserved for the Person's Account, brick red reserved for Disputed and form errors",
+      "Colour never alone: every state carries a word and an authored 1.75-stroke icon",
+      "Two radii (12px controls, 20px panels) and two soft offset shadows",
+      "One authored motion: the trace, 240ms exponential ease-out, zero under reduced motion",
+      "Light theme only; WCAG 2.2 AA throughout"
+    ],
+    "rules": [
+      { "name": "The Colour by Law Rule", "body": "Amber belongs to the Person's Account and brick red to Disputed and form errors. Neither appears on any other element for any reason; when they appear they carry real information.", "section": "colors" },
+      { "name": "The Never by Colour Alone Rule", "body": "Every state also carries a word and an icon: the pen for the Person's Account, the flag for Disputed, the trace for a Source, the tick for Confirmed. Colour confirms; it never carries the message by itself.", "section": "colors" },
+      { "name": "The One Green Rule", "body": "Sea Green is the only accent. It is used for things the reader can act on or follow (links, the primary action, the Source) and for the lit trace; it is never used as a background field except as the mark's reversed tile and the pale wash.", "section": "colors" },
+      { "name": "The Large Default Rule", "body": "Body is 19px on desktop and 18px below 720px; nothing a reader must read is set below 16px. The audience includes older eyes; the size is not negotiable downward.", "section": "typography" },
+      { "name": "The No Capitals Rule", "body": "No text is set in uppercase, no letter-spaced labels, and no kickers or eyebrows above headings. Hierarchy comes from size and weight alone.", "section": "typography" },
+      { "name": "The Tabular Dates Rule", "body": "Dates and numbers in Fact rows, timelines and tables use tabular figures so columns align.", "section": "typography" },
+      { "name": "The Soft Offset Rule", "body": "Shadows are ink-tinted, offset downward, negative-spread and low alpha. No hard offset shadows, no spread shadows, no glow, and no shadow on the mark.", "section": "elevation" },
+      { "name": "The Flat Inset Rule", "body": "Anything inside a panel (the letter, file chips, lit lines, bubbles) is flat and tonal; only the panel itself is raised.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do set everything in Atkinson Hyperlegible Next from the self-hosted variable files; body 19px (18px under 720px), line height 1.55, measure 66ch.",
+      "Do use Sea Green for the mark, the single filled action, links, the Source label and focus; deepen to Deep Sea Green on hover.",
+      "Do mark every Person's Account fact in amber with the pen or person icon and the words, and every Disputed fact in brick red with the flag icon and the word.",
+      "Do label every synthetic demonstration \"Example records, not a real person\" with the info icon.",
+      "Do use 12px on controls and 20px on panels, with the Panel shadow on raised cards and the Raise shadow on the primary button only.",
+      "Do show focus as a 3px Sea Green outline offset 3px, and inputs as a Sea Green border plus a 4px wash halo.",
+      "Do keep the trace as the one motion: 240ms, cubic-bezier(0.16, 1, 0.3, 1), zero under reduced motion.",
+      "Do alternate Paper and Wash sections with 4rem (6rem at 900px) vertical padding inside a 1200px container.",
+      "Do use the glossary words exactly: Record, Fact, Source, Timeline, Pathway, Person Statement, Person's Account, Disputed, Declined."
+    ],
+    "donts": [
+      "Don't use amber or brick red anywhere except the Person's Account, Disputed, and form errors.",
+      "Don't let colour carry a state without a word and an icon beside it.",
+      "Don't add a second accent, a gradient, a dark theme, stock photography or decorative illustration.",
+      "Don't set text in capitals, add kickers or eyebrows above headings, or go below 16px for anything a reader must read.",
+      "Don't use hard offset shadows, spread shadows, glows, or any shadow or outline on the mark.",
+      "Don't animate on entry or scroll; the trace is the only motion.",
+      "Don't use glyph icons, icon fonts or imported icon packs; icons are authored SVG on the 24px grid at 1.75 stroke.",
+      "Don't place more than one filled primary button in a view.",
+      "Don't imply NHS or pharmacy affiliation through colour, crests or typography; the independence line stays in the footer."
+    ]
+  }
+}

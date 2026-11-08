@@ -1,0 +1,5 @@
+.hh-account { padding-block: var(--hh-s8); background: var(--hh-wash); min-height: 60svh; display: grid; align-items: center; }
+.hh-account__wrap { display: grid; justify-items: center; }
+.hh-account__panel { width: min(34rem, 100%); padding: var(--hh-s6); display: grid; gap: var(--hh-s4); justify-items: start; }
+.hh-account__panel h1 { font-size: var(--hh-text-2xl); }
+.hh-account__panel .hh-btn { margin-top: var(--hh-s2); }

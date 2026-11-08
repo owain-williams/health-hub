@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Hub — Heritage Chemist sketch</title>
+<style>
+  :root{--bottle:#163b2e;--bottle-deep:#0f2a21;--enamel:#f7f6f1;--gold:#c9a35a;--ink:#1b1f1c;--soft:#5a6660;--own:#8a5a00}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1440px;height:900px;overflow:hidden;background:var(--bottle);font-family:Georgia,"Times New Roman",serif;color:#fff}
+  body{background:linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/80px 80px, linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px) 0 0/80px 80px, var(--bottle)}
+  header{height:96px;display:flex;align-items:center;justify-content:space-between;padding:0 72px;border-bottom:1px solid var(--gold)}
+  .brand{font-size:28px;letter-spacing:.06em;display:flex;align-items:center;gap:16px}
+  .brand .seal{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:16px;color:var(--gold);font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:.05em}
+  nav{display:flex;gap:34px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#e6e1d2}
+  .hero{display:grid;grid-template-columns:1fr 520px;gap:80px;padding:80px 72px 0;align-items:start}
+  h1{font-size:62px;line-height:1.05;font-weight:400;letter-spacing:-.01em;max-width:720px}
+  .lede{font-family:"Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1.6;color:#dcd8c8;margin-top:26px;max-width:620px}
+  .cta{display:inline-block;margin-top:36px;background:var(--gold);color:var(--bottle-deep);font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:20px 32px;border-radius:3px}
+  .cta2{margin-left:24px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:17px;color:var(--gold);text-decoration:underline;text-underline-offset:5px}
+  .rule{margin-top:40px;border-top:1px solid var(--gold);padding-top:18px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#cfc8b2;display:flex;gap:40px}
+  .label{background:var(--enamel);color:var(--ink);border:6px double var(--gold);padding:34px 36px;position:relative}
+  .label .top{font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--soft);text-align:center}
+  .label h2{font-size:34px;font-weight:400;text-align:center;margin:12px 0 6px;line-height:1.1}
+  .label .kind{text-align:center;font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);border-bottom:1px solid var(--gold);padding-bottom:16px}
+  .label dl{display:grid;grid-template-columns:110px 1fr;gap:10px 14px;margin-top:18px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.5}
+  .label dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);padding-top:4px}
+  .label .own{margin-top:22px;border-top:1px dashed #c9c3b3;padding-top:16px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.5}
+  .label .own b{display:block;color:var(--own);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+  .example{position:absolute;right:0;top:-28px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#cfc8b2}
+  footer{position:absolute;left:72px;right:72px;bottom:28px;border-top:1px solid rgba(201,163,90,.5);padding-top:16px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px;color:#cfc8b2;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+  <header><div class="brand"><span class="seal">HH</span>Health Hub</div><nav><a>How it works</a><a>Privacy</a><a>Sign in</a></nav></header>
+  <section class="hero">
+    <div>
+      <h1>Your records, kept as carefully as a chemist keeps a ledger.</h1>
+      <p class="lede">Bring every clinic letter, result and prescription. Health Hub writes each fact onto your timeline with its date and the exact page it came from, and never adds an opinion of its own.</p>
+      <a class="cta">Create account</a><a class="cta2">Sign in</a>
+      <div class="rule"><span>Est. for patients</span><span>UK data only</span><span>No interpretation</span></div>
+    </div>
+    <aside class="label">
+      <div class="example">Example records · not a real person</div>
+      <div class="top">Health Hub · From your records</div>
+      <h2>HbA1c 48 mmol/mol</h2>
+      <div class="kind">Measurement · 3 March 2025</div>
+      <dl><dt>Source</dt><dd>Clinic letter, Royal Example Hospital, 21 March 2025 · page 1, line 6</dd><dt>Status</dt><dd>Kept exactly as written. Not interpreted.</dd></dl>
+      <div class="own"><b>Person's Account</b>Metformin started, as stated by you on 10 April 2025.</div>
+    </aside>
+  </section>
+  <footer><span>Health Hub is an independent service and is not a pharmacy or part of the NHS.</span><span>WCAG 2.2 AA</span></footer>
+</body>
+</html>

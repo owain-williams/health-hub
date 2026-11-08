@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Hub — Patient Leaflet sketch</title>
+<style>
+  :root{--blue:#0b4f9c;--blue-deep:#083a73;--pale:#eef3fa;--ink:#1a1f26;--soft:#4c5660;--go:#007f3b;--rule:#d5dde7;--own:#8a5a00}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1440px;height:900px;overflow:hidden;background:#fff;font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+  .band{height:92px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 72px}
+  .band .brand{font-size:26px;font-weight:700;display:flex;gap:14px;align-items:center}
+  .band .tag{background:#fff;color:var(--blue);font-weight:700;padding:6px 10px;border-radius:4px;font-size:18px}
+  .band nav{display:flex;gap:30px;font-size:17px}
+  .band nav a:last-child{text-decoration:underline;text-underline-offset:4px}
+  .wrap{display:grid;grid-template-columns:1fr 520px;gap:80px;padding:60px 72px 0}
+  h1{font-size:56px;line-height:1.08;letter-spacing:-.015em;font-weight:700;max-width:700px}
+  .lede{font-size:21px;line-height:1.55;color:var(--soft);margin-top:22px;max-width:680px}
+  .cta{display:inline-block;margin-top:30px;background:var(--go);color:#fff;font-size:20px;font-weight:700;padding:18px 30px;border-radius:6px;box-shadow:0 4px 0 #00592a}
+  .cta2{margin-left:22px;font-size:18px;color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+  ol{margin-top:44px;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:22px 40px;max-width:700px}
+  ol li{border-top:4px solid var(--blue);padding-top:12px;font-size:17px;line-height:1.5;color:var(--soft)}
+  ol li b{display:block;color:var(--ink);font-size:19px;margin-bottom:4px}
+  ol li.no{border-top-color:#8d2a2a}
+  .leaf{background:var(--pale);border:1px solid var(--rule);border-radius:8px;padding:26px 28px;position:relative}
+  .leaf h2{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);display:flex;justify-content:space-between}
+  .leaf .row{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--rule);font-size:16px;line-height:1.4}
+  .leaf .d{font-weight:700;color:var(--blue)}
+  .leaf .f b{display:block;font-size:18px}
+  .leaf .s{color:var(--soft);font-size:14px;text-decoration:underline;text-underline-offset:3px}
+  .leaf .own .d{color:var(--own)}
+  .leaf .note{margin-top:16px;font-size:14px;color:var(--soft);line-height:1.5}
+  .example{position:absolute;right:28px;top:-26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+  footer{position:absolute;left:0;right:0;bottom:0;height:64px;border-top:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 72px;font-size:15px;color:var(--soft)}
+</style>
+</head>
+<body>
+  <div class="band"><div class="brand"><span class="tag">HH</span>Health Hub</div><nav><a>How it works</a><a>What we never do</a><a>Privacy</a><a>Sign in</a></nav></div>
+  <div class="wrap">
+    <div>
+      <h1>Keep every letter, result and prescription in one place. Read exactly what they say.</h1>
+      <p class="lede">Health Hub lifts the facts out of your documents and puts them in date order, each one labelled with the page it came from. It does not explain, score or advise. That part stays between you and your clinician.</p>
+      <a class="cta">Create account</a><a class="cta2">Already registered? Sign in</a>
+      <ol>
+        <li><b>1. What Health Hub does</b>Reads your uploaded documents and lists each fact with its date and source.</li>
+        <li class="no"><b>2. What it never does</b>No diagnosis, no urgency flags, no suggested actions, no targets.</li>
+        <li><b>3. Your documents</b>Stored in the UK. Never used to train AI. Deleted completely when you ask.</li>
+        <li><b>4. Who it is for</b>Anyone holding their own records, at any age, on any device.</li>
+      </ol>
+    </div>
+    <aside class="leaf">
+      <div class="example">Example records · not a real person</div>
+      <h2><span>Your timeline</span><span>4 facts · 2 documents</span></h2>
+      <div class="row"><div class="d">14 Jan 2025</div><div class="f"><b>Referral to diabetes clinic</b><span class="s">GP letter · page 1, line 3</span></div></div>
+      <div class="row"><div class="d">3 Mar 2025</div><div class="f"><b>HbA1c 48 mmol/mol</b><span class="s">Clinic letter · page 1, line 6</span></div></div>
+      <div class="row"><div class="d">21 Mar 2025</div><div class="f"><b>Diabetes clinic appointment</b><span class="s">Clinic letter · page 1, line 4</span></div></div>
+      <div class="row own"><div class="d">10 Apr 2025</div><div class="f"><b>Metformin started</b><span class="s">Your own account, 10 April 2025</span></div></div>
+      <p class="note">Every line links to the exact place in the document. Nothing here is a judgement about your health.</p>
+    </aside>
+  </div>
+  <footer><span>Health Hub is an independent service and is not part of the NHS.</span><span>Data stored in the UK · WCAG 2.2 AA</span></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Hub — Category standard sketch</title>
+<style>
+  :root{--teal:#0e7490;--teal-deep:#0b5c72;--ink:#0f172a;--soft:#475569;--line:#e2e8f0;--wash:#f1f5f9}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1440px;height:900px;overflow:hidden;background:#fff;font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+  header{height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 72px}
+  .brand{font-size:22px;font-weight:700;display:flex;align-items:center;gap:10px}
+  .dot{width:30px;height:30px;border-radius:8px;background:var(--teal)}
+  nav{display:flex;gap:30px;font-size:16px;color:var(--soft);align-items:center}
+  nav .btn{background:var(--teal);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600}
+  .hero{text-align:center;padding:60px 72px 0}
+  h1{font-size:56px;line-height:1.1;letter-spacing:-.02em;font-weight:800;max-width:860px;margin:0 auto}
+  .lede{font-size:20px;line-height:1.55;color:var(--soft);max-width:680px;margin:20px auto 0}
+  .cta{display:inline-block;margin-top:28px;background:var(--teal);color:#fff;font-weight:700;font-size:18px;padding:16px 28px;border-radius:10px}
+  .cta2{display:inline-block;margin-left:16px;font-size:17px;color:var(--teal);font-weight:600}
+  .phone{width:300px;height:420px;margin:40px auto 0;border:10px solid var(--ink);border-radius:36px;background:#fff;overflow:hidden;position:relative}
+  .phone .bar{height:44px;background:var(--teal);color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;padding:0 16px}
+  .phone .row{padding:12px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--soft)}
+  .phone .row b{display:block;color:var(--ink);font-size:14px}
+  .cards{position:absolute;left:72px;right:72px;bottom:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:var(--wash);border:1px solid var(--line);border-radius:14px;padding:22px 24px;font-size:15px;line-height:1.5;color:var(--soft)}
+  .card .ic{width:36px;height:36px;border-radius:10px;background:var(--teal);margin-bottom:12px}
+  .card b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+  .example{position:absolute;right:72px;top:90px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+</style>
+</head>
+<body>
+  <header><div class="brand"><span class="dot"></span>Health Hub</div><nav><a>Features</a><a>Security</a><a>Pricing</a><a>Sign in</a><a class="btn">Get started</a></nav></header>
+  <div class="example">Example records · not a real person</div>
+  <section class="hero">
+    <h1>All your medical records, organised in one secure place.</h1>
+    <p class="lede">Upload letters, results and prescriptions. See every fact on a clear timeline, with a link back to the original document. No interpretation, ever.</p>
+    <a class="cta">Create account</a><a class="cta2">Sign in →</a>
+    <div class="phone">
+      <div class="bar">Your timeline</div>
+      <div class="row"><b>HbA1c 48 mmol/mol</b>3 Mar 2025 · Clinic letter p1</div>
+      <div class="row"><b>Diabetes clinic appointment</b>21 Mar 2025 · Clinic letter p1</div>
+      <div class="row"><b>Referral</b>14 Jan 2025 · GP letter p1</div>
+      <div class="row"><b>Metformin started</b>10 Apr 2025 · Your account</div>
+    </div>
+  </section>
+  <div class="cards">
+    <div class="card"><div class="ic"></div><b>Every fact cited</b>Tap any entry to see the exact page and line it came from.</div>
+    <div class="card"><div class="ic"></div><b>Never interprets</b>No scores, alerts or advice. Just what your records say.</div>
+    <div class="card"><div class="ic"></div><b>UK data, your control</b>Stored in the UK. Delete everything whenever you choose.</div>
+  </div>
+</body>
+</html>

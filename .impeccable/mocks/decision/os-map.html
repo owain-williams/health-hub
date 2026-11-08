@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Health Hub — Explorer Map sketch</title>
+<style>
+  :root{--paper:#ffffff;--grid:#8fc3e8;--contour:#d9915a;--wood:#cfe6b8;--water:#a9d8f0;--route:#d81b60;--orange:#f58220;--ink:#1f2328;--ink-soft:#4b535c;--path:#1a8f3c}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1440px;height:900px;overflow:hidden;font-family:"Gill Sans","Gill Sans MT",Calibri,"Trebuchet MS",sans-serif;color:var(--ink);background:var(--paper)}
+  .map{position:absolute;inset:0;background:
+     linear-gradient(var(--grid) 1px, transparent 1px) 0 0/120px 120px,
+     linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0/120px 120px, var(--paper)}
+  .gridno{position:absolute;color:#2a6fb0;font-size:13px;font-weight:600}
+  .wood{position:absolute;left:760px;top:120px;width:520px;height:300px;background:var(--wood);border-radius:48% 52% 46% 54%/55% 45% 55% 45%;opacity:.9}
+  .water{position:absolute;left:300px;top:560px;width:1200px;height:70px;background:var(--water);transform:rotate(-7deg);border-radius:40px}
+  svg.terrain{position:absolute;inset:0}
+  /* cover panel */
+  .cover{position:absolute;left:0;top:0;width:470px;height:900px;background:var(--orange);color:#fff;padding:40px 44px;display:flex;flex-direction:column}
+  .cover .os{font-size:14px;letter-spacing:.26em;text-transform:uppercase;font-weight:600}
+  .cover .nav{display:flex;gap:18px;font-size:14px;margin-top:6px;opacity:.95}
+  .cover h1{font-size:60px;line-height:1.02;font-weight:600;margin-top:140px;letter-spacing:-.01em}
+  .cover .sub{font-size:20px;line-height:1.45;margin-top:22px;max-width:360px}
+  .cover .scale{margin-top:auto;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+  .cta{display:inline-block;margin-top:40px;background:#fff;color:var(--orange);font-weight:700;font-size:20px;padding:18px 28px;border-radius:4px;width:max-content}
+  .cta2{display:block;margin-top:14px;font-size:16px;text-decoration:underline;text-underline-offset:4px}
+  .example{position:absolute;right:28px;top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);background:#fff;padding:4px 8px;border:1px solid #cdd6df}
+  /* facts as place names */
+  .fact{position:absolute;font-size:15px;color:var(--ink);white-space:nowrap}
+  .fact b{display:block;font-weight:600;font-size:17px}
+  .fact i{display:block;font-style:normal;font-size:12px;color:var(--ink-soft);letter-spacing:.04em}
+  .fact.own b{color:#8a5a00}
+  /* legend */
+  .legend{position:absolute;right:40px;bottom:40px;width:330px;background:#fff;border:2px solid var(--orange);padding:16px 18px;font-size:13px;line-height:1.6}
+  .legend h3{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+  .legend li{list-style:none;display:flex;align-items:center;gap:10px}
+  .sw{width:26px;height:10px;border-radius:2px;display:inline-block}
+  /* grid reference callout */
+  .ref{position:absolute;left:560px;bottom:70px;background:#fff;border:1px solid #2a6fb0;padding:12px 14px;font-size:13px;line-height:1.5;width:330px}
+  .ref b{font-weight:700;color:#2a6fb0;letter-spacing:.08em}
+</style>
+</head>
+<body>
+  <div class="map"></div>
+  <div class="wood"></div>
+  <div class="water"></div>
+  <svg class="terrain" viewBox="0 0 1440 900" fill="none">
+    <!-- contours -->
+    <g stroke="#d9915a" stroke-width="1.2" opacity=".9">
+      <path d="M520 60 C 640 130, 700 260, 620 420 S 560 700, 700 880"/>
+      <path d="M560 60 C 680 140, 740 270, 660 430 S 600 710, 740 880"/>
+      <path d="M600 60 C 720 150, 780 280, 700 440 S 640 720, 780 880"/>
+      <path d="M1000 480 C 1100 420, 1250 440, 1380 400"/>
+      <path d="M1000 520 C 1100 460, 1250 480, 1380 440"/>
+    </g>
+    <!-- footpath (Pathway) -->
+    <path d="M520 700 L 820 640 L 1120 560 L 1400 500" stroke="#1a8f3c" stroke-width="2.5" stroke-dasharray="10 7"/>
+    <!-- walked route = Timeline -->
+    <path d="M500 300 L 700 300 L 880 300 L 1080 300 L 1300 300 L 1440 300" stroke="#d81b60" stroke-width="4"/>
+    <g fill="#fff" stroke="#d81b60" stroke-width="3">
+      <circle cx="620" cy="300" r="10"/><circle cx="880" cy="300" r="10"/><circle cx="1060" cy="300" r="10"/><circle cx="1300" cy="300" r="10"/>
+    </g>
+    <!-- Source leader to grid ref -->
+    <path d="M620 312 L 620 560 L 700 800" stroke="#2a6fb0" stroke-width="1.2" stroke-dasharray="3 4"/>
+    <!-- date ticks on route -->
+    <g fill="#d81b60" font-family="Gill Sans, sans-serif" font-size="12" font-weight="600">
+      <text x="605" y="282">14 JAN</text><text x="865" y="282">3 MAR</text><text x="1040" y="282">21 MAR</text><text x="1282" y="282">10 APR</text>
+    </g>
+  </svg>
+
+  <span class="gridno" style="left:590px;top:6px">52</span><span class="gridno" style="left:710px;top:6px">53</span><span class="gridno" style="left:830px;top:6px">54</span><span class="gridno" style="left:950px;top:6px">55</span><span class="gridno" style="left:1070px;top:6px">56</span><span class="gridno" style="left:1190px;top:6px">57</span><span class="gridno" style="left:1310px;top:6px">58</span>
+  <span class="gridno" style="left:1418px;top:112px">41</span><span class="gridno" style="left:1418px;top:232px">40</span><span class="gridno" style="left:1418px;top:352px">39</span><span class="gridno" style="left:1418px;top:472px">38</span><span class="gridno" style="left:1418px;top:592px">37</span><span class="gridno" style="left:1418px;top:712px">36</span>
+
+  <div class="fact" style="left:560px;top:318px"><b>Referral</b>Diabetes clinic<i>GP letter · p1 · l3</i></div>
+  <div class="fact" style="left:830px;top:318px"><b>HbA1c 48 mmol/mol</b>Measurement<i>Clinic letter · p1 · l6</i></div>
+  <div class="fact" style="left:1010px;top:318px"><b>Appointment</b>Diabetes clinic<i>Clinic letter · p1 · l4</i></div>
+  <div class="fact own" style="left:1240px;top:318px"><b>Metformin started</b>Person's Account<i>Stated by you</i></div>
+
+  <div class="example">Example records · not a real person</div>
+
+  <div class="ref"><b>SOURCE · 52 / 39 · P1 L6</b><br>"Her most recent HbA1c was 48 mmol/mol on 3 March 2025." Clinic letter, Royal Example Hospital, 21 March 2025.</div>
+
+  <div class="legend">
+    <h3>Key to your records</h3>
+    <ul>
+      <li><span class="sw" style="background:#d81b60"></span>Timeline: facts in date order</li>
+      <li><span class="sw" style="background:#1a8f3c;border-bottom:3px dashed #fff"></span>Pathway: related events, confirmed by you</li>
+      <li><span class="sw" style="background:#2a6fb0"></span>Source: page and line it came from</li>
+      <li><span class="sw" style="background:#8a5a00"></span>Person's Account: written by you</li>
+      <li><span class="sw" style="background:#fff;border:1px solid #999"></span>No interpretation, ever</li>
+    </ul>
+  </div>
+
+  <div class="cover">
+    <div class="os">Health Hub</div>
+    <div class="nav"><span>How it works</span><span>Privacy</span><span>Sign in</span></div>
+    <h1>Every letter, placed exactly where it belongs.</h1>
+    <p class="sub">Upload your clinic letters and results. Health Hub maps every fact to its date and back to the line it came from. It shows what your records say, never what they mean.</p>
+    <a class="cta">Create account</a>
+    <a class="cta2">Already have one? Sign in</a>
+    <div class="scale">1 : your records · UK data only · Explorer edition</div>
+  </div>
+</body>
+</html>
