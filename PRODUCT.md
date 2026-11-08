@@ -35,7 +35,7 @@ Health Hub presents what the records say and never what they mean. It does not d
 - Records and Facts are immutable; corrections are new Records.
 - Data at rest and all AI processing stay in the UK or EU and providers must not train on inputs (ADR 0001).
 - Stack: Void on Cloudflare Workers, React 19 pages with server loaders, Postgres via Drizzle. Landing page lives at `pages/index.tsx`.
-- Landing page call to action (confirmed 2026-11-08): individuals create an account. The sign-up route and auth flow are not yet built; the landing page links to `/signup` and `/signin`, which must exist before launch.
+- Landing page call to action (confirmed 2026-11-08): individuals create an account. `/signup`, `/signin` and account settings exist (Identity spec, ADR 0003); sign-up is limited to the Allowlist until launch.
 - Undecided: pricing, launch date, whether a carer-first flow ships in v1.
 
 ## Brand Commitments

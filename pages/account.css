@@ -3,3 +3,33 @@
 .hh-account__panel { width: min(34rem, 100%); padding: var(--hh-s6); display: grid; gap: var(--hh-s4); justify-items: start; }
 .hh-account__panel h1 { font-size: var(--hh-text-2xl); }
 .hh-account__panel .hh-btn { margin-top: var(--hh-s2); }
+
+/* Auth forms */
+.hh-account__panel form { display: grid; gap: var(--hh-s4); width: 100%; }
+.hh-account__panel .hh-actions { display: flex; flex-wrap: wrap; gap: var(--hh-s3); align-items: center; }
+.hh-account__panel .hh-divider { display: flex; align-items: center; gap: var(--hh-s3); width: 100%; color: var(--hh-ink-soft); }
+.hh-account__panel .hh-divider::before, .hh-account__panel .hh-divider::after { content: ""; flex: 1; border-top: 1px solid var(--hh-line); }
+.hh-notice { width: 100%; padding: var(--hh-s3) var(--hh-s4); border-radius: var(--hh-r-control); border: 1.5px solid var(--hh-line); background: var(--hh-wash); }
+.hh-notice--error { border-color: var(--hh-disputed); background: var(--hh-disputed-wash); }
+.hh-notice--success { border-color: var(--hh-primary); background: var(--hh-primary-wash); }
+.hh-notice > * + * { margin-top: var(--hh-s2); }
+
+/* Account settings */
+.hh-settings { padding-block: var(--hh-s7, 3rem); }
+.hh-settings__wrap { display: grid; gap: var(--hh-s5); max-width: 46rem; }
+.hh-settings__wrap > header { display: grid; gap: var(--hh-s2); }
+.hh-settings__section { padding: var(--hh-s5); display: grid; gap: var(--hh-s4); }
+.hh-settings__section h2 { font-size: var(--hh-text-xl); }
+.hh-settings__section form { display: grid; gap: var(--hh-s4); }
+.hh-settings__section .hh-actions { display: flex; flex-wrap: wrap; gap: var(--hh-s3); align-items: center; }
+.hh-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.hh-list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--hh-s3); padding-block: var(--hh-s3); border-top: 1px solid var(--hh-line-soft); }
+.hh-list li:first-child { border-top: 0; }
+.hh-list .hh-list__meta { color: var(--hh-ink-soft); font-size: var(--hh-text-sm); }
+.hh-codes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: var(--hh-s2); font-variant-numeric: tabular-nums; letter-spacing: 0.06em; font-size: var(--hh-text-md); }
+.hh-secret { font-variant-numeric: tabular-nums; letter-spacing: 0.08em; word-break: break-all; }
+.hh-settings__section--danger { border-color: var(--hh-disputed); }
+.hh-btn--danger { background: var(--hh-disputed); color: #fff; }
+.hh-btn--danger:hover { background: #8f1e18; color: #fff; }
+/* Void's Form error summary (role="alert"), styled as an error notice */
+[data-void-form-error] { padding: var(--hh-s3) var(--hh-s4); border-radius: var(--hh-r-control); border: 1.5px solid var(--hh-disputed); background: var(--hh-disputed-wash); font-weight: 700; }

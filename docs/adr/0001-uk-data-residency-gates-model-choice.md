@@ -11,3 +11,4 @@ Health Hub holds a Person's medical records and sends them to AI models for Extr
 - Some well-known models and the default Workers AI route are unavailable regardless of quality or price.
 - Residency and no-training terms are checked and recorded per provider before an evaluation is run.
 - Storage and database jurisdiction are set at provisioning time and must not be changed casually.
+- Account authentication data (Better Auth tables) lives in the same Postgres database and is covered by this decision. Auth emails (Verification, password reset) may be delivered by a sender outside the UK/EU because they carry only an email address and a link: no health data, and no mention of Records, uploads or Extraction.

@@ -19,6 +19,8 @@
     "middleware",
     "crons",
     "queues",
-    "db"
+    "db",
+    "auth.ts",
+    "env.ts"
   ]
 }

@@ -6,6 +6,9 @@ export default defineConfig({
     "typedRoutes": true
   },
   "database": "pg",
+  "auth": {
+    "providers": ["email"]
+  },
   "worker": {
     "compatibility_date": "2026-02-24"
   },

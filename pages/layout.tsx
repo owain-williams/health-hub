@@ -1,8 +1,10 @@
+import { useShared } from "@void/react";
 import type { ReactNode } from "react";
 import { Logo } from "../src/ui/Logo";
 import "./style.css";
 
 export default function Layout({ children }: { children: ReactNode }) {
+  const account = useShared()?.account ?? null;
   return (
     <>
       <a className="hh-skip" href="#main">Skip to content</a>
@@ -16,8 +18,14 @@ export default function Layout({ children }: { children: ReactNode }) {
             <a href="/#questions">Questions</a>
           </nav>
           <div className="hh-header__actions">
-            <a className="hh-btn hh-btn--quiet" href="/signin">Sign in</a>
-            <a className="hh-btn hh-btn--primary" href="/signup">Create account</a>
+            {account ? (
+              <a className="hh-btn hh-btn--primary" href="/account">Your account</a>
+            ) : (
+              <>
+                <a className="hh-btn hh-btn--quiet" href="/signin">Sign in</a>
+                <a className="hh-btn hh-btn--primary" href="/signup">Create account</a>
+              </>
+            )}
             <details className="hh-menu">
               <summary className="hh-btn hh-btn--secondary hh-menu__button" aria-label="Open menu">
                 <svg className="hh-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
@@ -28,7 +36,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 <a href="/#what-you-see">What you'll see</a>
                 <a href="/#never">What it never does</a>
                 <a href="/#questions">Questions</a>
-                <a href="/signin">Sign in</a>
+                {account ? <a href="/account">Your account</a> : <a href="/signin">Sign in</a>}
               </nav>
             </details>
           </div>
