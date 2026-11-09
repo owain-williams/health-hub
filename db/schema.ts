@@ -1,4 +1,4 @@
-import { date, index, integer, pgTable, serial, text, timestamp, uuid } from "void/schema-pg";
+import { date, index, integer, pgTable, serial, text, timestamp, unique, uuid } from "void/schema-pg";
 
 export const messages = pgTable("messages", {
   id: serial("id").primaryKey(),
@@ -43,3 +43,28 @@ export const erasureCounts = pgTable("erasure_counts", {
   day: date("day").primaryKey(),
   count: integer("count").notNull().default(0),
 });
+
+// ── Records ─────────────────────────────────────────────────────────────────
+// Pages live in R2 under `persons/<PersonId>/records/<RecordId>/<n>` (docs/specs/records.md).
+// Rows are deleted explicitly on PersonErased, before the Person row goes.
+
+/** One document a Person supplied, kept as given. Immutable once inserted. */
+export const records = pgTable(
+  "records",
+  {
+    id: uuid("id").primaryKey(),
+    personId: uuid("person_id")
+      .notNull()
+      .references(() => persons.id),
+    /** `pdf` or `photos`. */
+    form: text("form").notNull(),
+    originalName: text("original_name"),
+    /** Stored files: 1 for a PDF, one per photo. */
+    fileCount: integer("file_count").notNull(),
+    contentHash: text("content_hash").notNull(),
+    kind: text("kind"),
+    recordDate: date("record_date", { mode: "string" }),
+    uploadedAt: timestamp("uploaded_at", { withTimezone: true }).notNull(),
+  },
+  (t) => [unique("records_person_content_hash_unique").on(t.personId, t.contentHash), index("records_person_uploaded_idx").on(t.personId, t.uploadedAt)],
+);

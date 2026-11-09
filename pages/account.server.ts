@@ -6,6 +6,7 @@ import { rowsOf } from "../src/application/db";
 import { z } from "zod";
 import { accountEmail, eraseAccount, ErasureRefused } from "../src/application/identity/erase";
 import { requirePerson } from "../src/application/identity/requirePerson";
+import { pageStore } from "../src/application/records/live";
 import { listSignInHistory } from "../src/application/identity/signInHistory";
 import { describeDevice, isRecentSignIn, SIGN_IN_EVENT_LABELS, type SignInEventKind } from "../src/domains/identity/rules";
 
@@ -72,7 +73,7 @@ export const actions = {
     const { signedIn } = requirePerson(c);
     const email = (await accountEmail(signedIn.accountId)) ?? signedIn.accountEmail;
     try {
-      await eraseAccount({ accountId: signedIn.accountId, accountEmail: email, signedInAt: new Date(signedIn.signedInAt), typedEmail: body.confirmEmail });
+      await eraseAccount({ accountId: signedIn.accountId, accountEmail: email, signedInAt: new Date(signedIn.signedInAt), typedEmail: body.confirmEmail }, pageStore);
     } catch (error) {
       if (error instanceof ErasureRefused) throw new ValidationError({ confirmEmail: error.message });
       throw error;

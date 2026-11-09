@@ -48,7 +48,7 @@ Authentication is Void-managed Better Auth (ADR 0003). Auth data lives in the UK
 - **Erase**: needs a Recent Sign-in, a screen stating exactly what will be deleted, and typing the Account's email. Deletes all database data in one transaction, then the Person's storage prefix, then sends a completion email.
 - **Manage Allowlist**: an operator adds or removes addresses with a CLI script. No UI.
 - **Purge unverified Accounts**: a scheduled sweep deletes Accounts unverified after 7 days.
-- **Sweep orphaned storage**: a scheduled sweep deletes any storage prefix with no matching Person. Not built yet: there is no stored-file storage until the Records context provisions it (EU jurisdiction, ADR 0001). Erasure calls a `PersonFiles` port that is a no-op until then.
+- **Sweep orphaned storage**: a scheduled sweep, on the daily housekeeping cron, deletes stored Record files that no Record holds, once they are over an hour old. Records owns it (`docs/specs/records.md`). Erasure removes the Person's storage prefix through Records' `PageStore`, which implements the `PersonFiles` port.
 
 ## Events in
 

@@ -7,15 +7,16 @@ import { db, inArray, sql } from "void/db";
 import type { AccountId, PersonId } from "../../domains/identity/events";
 import { isRecentSignIn, normaliseEmail, unverifiedCutoff } from "../../domains/identity/rules";
 import { dispatch } from "../events";
+import "../handlers";
 import { rowsOf, type Tx } from "../db";
 import { identityEmails } from "./emails";
 
-/** Stored files live under one prefix per Person. Records provides the real adapter once storage exists. */
+/** Stored files live under one prefix per Person. Records' `pageStore` is the real adapter. */
 export interface PersonFiles {
   deleteAllFor(personId: PersonId): Promise<void>;
 }
 
-/** Until the Records context provisions storage (EU jurisdiction, ADR 0001) there are no files to delete. */
+/** For callers with no stored files to remove, such as the unverified-Account purge. */
 export const noPersonFiles: PersonFiles = { deleteAllFor: async () => {} };
 
 export class ErasureRefused extends Error {

@@ -20,8 +20,12 @@ _Avoid_: Note, manual entry, user fact
 The date the document itself carries, such as the letter date or report date. Set by extraction, correctable by the Person. Undated Facts fall back to it.
 _Avoid_: Document date, created at, upload date
 
+**Original Name**:
+The file name a Record arrived with, kept exactly as given. Labels the Record until it has a Kind and Record Date. Photos have none.
+_Avoid_: Filename, title
+
 **Upload**:
-The act of a Person supplying a Record as a PDF or one or more photos of paper pages. Produces one Record and starts extraction.
+The act of a Person supplying a Record as a PDF or one or more photos of paper pages. Produces one Record and starts extraction, unless the Person already has a Record with identical content, in which case nothing new is created.
 _Avoid_: Import, ingest
 
 **Page**:

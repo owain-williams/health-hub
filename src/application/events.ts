@@ -6,9 +6,10 @@
  * `src/application/handlers.ts`.
  */
 import type { PersonCreated, PersonErased } from "../domains/identity/events";
+import type { RecordDeleted, RecordUploaded } from "../domains/records/events";
 import type { Tx } from "./db";
 
-export type DomainEvent = PersonCreated | PersonErased;
+export type DomainEvent = PersonCreated | PersonErased | RecordUploaded | RecordDeleted;
 type Handler<E extends DomainEvent> = (event: E, tx: Tx) => Promise<void>;
 
 const handlers: { [K in DomainEvent["type"]]?: Handler<Extract<DomainEvent, { type: K }>>[] } = {};
