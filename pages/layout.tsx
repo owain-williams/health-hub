@@ -19,7 +19,10 @@ export default function Layout({ children }: { children: ReactNode }) {
           </nav>
           <div className="hh-header__actions">
             {account ? (
-              <a className="hh-btn hh-btn--primary" href="/account">Your account</a>
+              <>
+                <a className="hh-btn hh-btn--quiet" href="/records">Your records</a>
+                <a className="hh-btn hh-btn--primary" href="/account">Your account</a>
+              </>
             ) : (
               <>
                 <a className="hh-btn hh-btn--quiet" href="/signin">Sign in</a>
@@ -36,7 +39,14 @@ export default function Layout({ children }: { children: ReactNode }) {
                 <a href="/#what-you-see">What you'll see</a>
                 <a href="/#never">What it never does</a>
                 <a href="/#questions">Questions</a>
-                {account ? <a href="/account">Your account</a> : <a href="/signin">Sign in</a>}
+                {account ? (
+                  <>
+                    <a href="/records">Your records</a>
+                    <a href="/account">Your account</a>
+                  </>
+                ) : (
+                  <a href="/signin">Sign in</a>
+                )}
               </nav>
             </details>
           </div>

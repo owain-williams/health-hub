@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "source": {},
+  "source": {
+    "r2_buckets": [
+      {
+        "binding": "STORAGE",
+        "bucket_name": "health-hub-records",
+        "jurisdiction": "eu"
+      }
+    ]
+  },
   "resolved": {
     "account_id": "507e183a9ccab2cbb9c0f75ca32a2c7f",
-    "compatibility_date": "2026-02-24"
+    "compatibility_date": "2026-02-24",
+    "r2_buckets": [
+      {
+        "binding": "STORAGE",
+        "bucket_name": "health-hub-records",
+        "jurisdiction": "eu"
+      }
+    ]
   },
-  "text": "{\n  \"account_id\": \"507e183a9ccab2cbb9c0f75ca32a2c7f\",\n  \"compatibility_date\": \"2026-02-24\"\n}\n"
+  "text": "{\n  \"account_id\": \"507e183a9ccab2cbb9c0f75ca32a2c7f\",\n  \"compatibility_date\": \"2026-02-24\",\n  \"r2_buckets\": [\n    {\n      \"binding\": \"STORAGE\",\n      \"bucket_name\": \"health-hub-records\",\n      \"jurisdiction\": \"eu\"\n    }\n  ]\n}\n"
 }

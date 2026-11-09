@@ -15,6 +15,13 @@
       "when": 1794170482161,
       "tag": "20261108204122_lively_inertia",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794175676954,
+      "tag": "20261108220756_luxuriant_skin",
+      "breakpoints": true
     }
   ]
 }

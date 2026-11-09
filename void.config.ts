@@ -9,6 +9,10 @@ export default defineConfig({
   "auth": {
     "providers": ["email"]
   },
+  // Record Pages live in R2 in the EU jurisdiction (ADR 0001). Set at provisioning; do not change casually.
+  "cloudflare": {
+    "r2_buckets": [{ "binding": "STORAGE", "bucket_name": "health-hub-records", "jurisdiction": "eu" }]
+  },
   "worker": {
     "compatibility_date": "2026-02-24"
   },

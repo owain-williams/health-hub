@@ -1,0 +1,29 @@
+/* Records: list, upload and one Record. Builds on account.css settings layout. */
+.hh-records__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: var(--hh-s4); }
+.hh-records__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--hh-s3); }
+.hh-records__item a { display: grid; gap: var(--hh-s1); padding: var(--hh-s4) var(--hh-s5); border: 1.5px solid var(--hh-line); border-radius: var(--hh-r-panel); background: var(--hh-paper); color: var(--hh-ink); text-decoration: none; }
+.hh-records__item a:hover { border-color: var(--hh-primary); }
+.hh-records__item a:focus-visible { outline: 3px solid var(--hh-focus); outline-offset: 3px; }
+.hh-records__label { font-size: var(--hh-text-lg); font-weight: 700; overflow-wrap: anywhere; }
+.hh-records__meta { color: var(--hh-ink-soft); font-size: var(--hh-text-sm); }
+
+/* Upload */
+.hh-upload__picker { position: relative; display: grid; justify-items: center; gap: var(--hh-s2); width: 100%; padding: var(--hh-s6) var(--hh-s4); border: 2px dashed var(--hh-primary); border-radius: var(--hh-r-panel); background: var(--hh-wash); text-align: center; cursor: pointer; }
+.hh-upload__picker:focus-within { outline: 3px solid var(--hh-focus); outline-offset: 3px; }
+.hh-upload__picker strong { font-size: var(--hh-text-lg); }
+.hh-upload__picker input { font: inherit; font-size: var(--hh-text-sm); max-width: 100%; }
+.hh-upload__pages { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--hh-s3); width: 100%; }
+.hh-upload__page { display: grid; grid-template-columns: 5rem 1fr; gap: var(--hh-s3); align-items: center; padding: var(--hh-s3); border: 1.5px solid var(--hh-line); border-radius: var(--hh-r-control); }
+.hh-upload__thumb { width: 5rem; height: 5rem; object-fit: cover; border-radius: 8px; background: var(--hh-wash-deep); display: grid; place-items: center; font-weight: 700; color: var(--hh-ink-soft); }
+.hh-upload__page-name { overflow-wrap: anywhere; }
+.hh-upload__page .hh-actions { grid-column: 1 / -1; }
+.hh-upload__page .hh-btn { min-height: 44px; }
+.hh-upload progress { width: 100%; height: 1rem; accent-color: var(--hh-primary); }
+
+/* One Record */
+.hh-record__facts { display: grid; grid-template-columns: max-content 1fr; gap: var(--hh-s2) var(--hh-s5); margin: 0; }
+.hh-record__facts dt { color: var(--hh-ink-soft); }
+.hh-record__facts dd { margin: 0; overflow-wrap: anywhere; }
+.hh-record__pages { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--hh-s5); }
+.hh-record__pages figure { margin: 0; display: grid; gap: var(--hh-s2); }
+.hh-record__pages img { width: 100%; height: auto; border: 1.5px solid var(--hh-line); border-radius: var(--hh-r-control); background: var(--hh-wash); }
